@@ -20,7 +20,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.tvt.kafka.csm.CmsApp</mainClass>
+                  <mainClass>com.tvt.kafka.csm.DataReader</mainClass>
                 </transformer>
               </transformers>
             </configuration>

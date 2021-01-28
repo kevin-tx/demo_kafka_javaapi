@@ -15,10 +15,10 @@
     </appender>
     <!-- 按照每天生成日志文件 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${log.home}/catalina.out</file>
+        <file>/kfprlog/catalina.out</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <!--日志文件输出的文件名-->
-            <FileNamePattern>${log.home}/log_%d{yyyy-MM-dd}.%i.zip</FileNamePattern>
+            <FileNamePattern>/kfprlog/log_%d{yyyy-MM-dd}.%i.zip</FileNamePattern>
             <!--日志文件保留天数-->
             <MaxHistory>30</MaxHistory>
             <maxFileSize>50MB</maxFileSize>

@@ -5,16 +5,6 @@
     <!--第三方插件打印日志的级别限制-->.
     <property name="T3_LEVEL" value="INFO"/>
     <property resource="application.properties" />
-    <springProperty scope="context" name="log.hostId" source="log.hostId"
-                    defaultValue="logHostId"/>
-    <springProperty scope="context" name="log.home" source="log.home"
-                    defaultValue="logHome"/>
-    <springProperty scope="context" name="spring.application.name" source="spring.application.name"
-                    defaultValue="springApplicationName"/>
-    <springProperty scope="context" name="log.ms.version" source="log.ms.version"
-                    defaultValue="logMsVersion"/>
-    <springProperty scope="context" name="spring.profiles.active" source="spring.profiles.active"
-                    defaultValue="logMsVersion"/>
     <!-- 控制台输出 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -26,10 +16,10 @@
     </appender>
     <!-- 按照每天生成日志文件 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${log.home}/catalina.out</file>
+        <file>/kfcmlog/catalina.out</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <!--日志文件输出的文件名-->
-            <FileNamePattern>${log.home}/log_%d{yyyy-MM-dd}.%i.zip</FileNamePattern>
+            <FileNamePattern>/kfcmlog/log_%d{yyyy-MM-dd}.%i.zip</FileNamePattern>
             <!--日志文件保留天数-->
             <MaxHistory>30</MaxHistory>
             <maxFileSize>50MB</maxFileSize>
