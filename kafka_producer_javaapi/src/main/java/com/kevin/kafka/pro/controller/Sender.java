@@ -1,6 +1,5 @@
-package com.tvt.kafka.pro.controller;
+package com.kevin.kafka.pro.controller;
 
-import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.slf4j.Logger;

@@ -1,4 +1,4 @@
-package com.tvt.kafka.pro;
+package com.kevin.kafka.pro;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

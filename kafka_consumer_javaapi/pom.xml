@@ -32,7 +32,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.tvt.kafka.csm.DataReader</mainClass>
+                                    <mainClass>com.kevin.kafka.csm.DataReader</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
